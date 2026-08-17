@@ -1,0 +1,249 @@
+home:
+  header:
+    title: Sablewood Chronicles
+    description: >-
+      Welcome to the living record of our adventures, heroes, and the world we
+      shape together.
+    navBrand: Sablewood
+  nextSession: June 26, 2026 at 7 p.m.
+  questList:
+    - title: Deliver the Box to Hush
+      status: active
+      locationId: hush
+      description: >-
+        King Emeris tasked Orna Kaan and her companions to deliver a mysterious
+        box from Solitaire to Hush. The party has safely arrived in Hush amidst
+        a festival and is staying at an inn overnight.
+    - title: Rescue the Missing Children of Hush
+      status: completed
+      locationId: hush
+      description: >-
+        Assisted Tyrion Lannister in finding and rescuing children from Hush who
+        wandered too far from the village and were hunted by monstrosities.
+locations:
+  - id: solitaire
+    name: Solitaire
+    region: Kingdom of Hearth
+    description: >-
+      The capital city of the Kingdom of Hearth and the seat of King Emeris. It
+      serves as the main trade hub of the kingdom. The city has stood for
+      thousands of years and is magically protected through wards and runes,
+      with a total population of eight thousand.
+  - id: hush
+    name: Hush
+    region: Unknown
+    description: >-
+      A village currently celebrating a lively late-night festival. The party
+      arrived here after rescuing missing children on the road with Tyrion
+      Lannister and is staying at a local inn.
+  - id: sablewood-forest
+    name: The Sablewood Forest
+    description: >-
+      The Sablewood is an ancient, expansive forest of trees that reach hundreds
+      of feet into the air. Rumored to be older than the Forgotten Gods, this
+      dense wood is widely known throughout the Mortal Realm, and many who visit
+      are surprised to learn that the stories they believed were exaggerated
+      legends are, in fact, stark truths.
+timeline:
+  title: Campaign Timeline
+  subtitle: The story so far
+  description: Events of our heroes
+  events:
+    - id: evt-journey-begins
+      title: The Journey Begins
+      time:
+        era: Enlightenement
+        year: 3982
+        month: Tolmir
+        day: 4
+        hour: 12
+        minute: 45
+      type: location_change
+      description: The party takes the box with them and starts their journey towards Hush.
+      locationId: solitaire
+    - id: evt-ambush
+      title: Ambush on the Road
+      time:
+        era: Enlightenement
+        year: 3982
+        month: Tolmir
+        day: 4
+        hour: 19
+        minute: 0
+      type: combat
+      description: >-
+        The party finds a cart in the road that was blocked. They encounter a
+        group of strix wolf. Once they peacefully deal with the Strix Wolf, they
+        were ambushed by a group of thistle folk. The party barely manages to
+        fight them off.
+    - id: evt-rescue-hush-children
+      title: Rescue of the Hush Children
+      type: combat
+      description: >-
+        During late-night travel towards Hush while Orna rested in the carriage,
+        the party reconnected with their old friend Tyrion Lannister, a giant
+        bard searching for missing village children who strayed too far from
+        safety. Working with Tyrion, the party tracked the children down, fought
+        off attacking monstrosities, and rescued them.
+      locationId: hush
+      time:
+        era: Enlightenment
+        year: 3982
+        month: Tolmir
+        day: 4
+        hour: 22
+        minute: 30
+    - id: evt-arrival-in-hush
+      title: Arrival at Hush
+      type: location_change
+      description: >-
+        The party returned to the village of Hush in the dead of night. They
+        found Hush actively celebrating a festival with many villagers still
+        awake. The group quickly secured lodging at a local inn to rest for the
+        night.
+      locationId: hush
+      time:
+        era: Enlightenment
+        year: 3982
+        month: Tolmir
+        day: 4
+        hour: 23
+        minute: 45
+players:
+  - id: orna-kaan
+    name: Orna Kaan
+    class: Sorcerer
+    level: 1
+    ancestry: Galapa
+    community: Loreborn
+    subclass: Primal Origin
+    tier: 1
+    image: ''
+    description: ''
+    backstory: ''
+    stats:
+      agility: 0
+      strength: -1
+      finesse: 1
+      instinct: 2
+      presence: 1
+      knowledge: 0
+    backgroundQuestions: []
+    connectionQuestions: []
+  - id: fantasia
+    name: Fantasia
+    class: Druid
+    level: 1
+    ancestry: Faun
+    community: Wanderborne
+    subclass: Warden of Elements
+    tier: 1
+    image: ''
+    description: ''
+    backstory: ''
+    stats:
+      agility: 1
+      strength: 0
+      finesse: 1
+      instinct: 2
+      presence: -1
+      knowledge: 0
+    backgroundQuestions: []
+    connectionQuestions: []
+  - id: dracarys
+    name: Dracarys
+    class: Rogue
+    level: 1
+    ancestry: Drakona
+    community: Underborne
+    subclass: Nightwalker
+    tier: 1
+    image: ''
+    description: ''
+    backstory: ''
+    stats:
+      agility: 1
+      strength: -1
+      finesse: 2
+      instinct: 0
+      presence: 1
+      knowledge: 0
+    backgroundQuestions: []
+    connectionQuestions: []
+  - id: vala-thorne
+    name: Vala Thorne
+    class: Guardian
+    level: 1
+    ancestry: Human
+    community: ''
+    subclass: Vengeance
+    tier: 1
+    image: ''
+    description: ''
+    backstory: ''
+    stats:
+      agility: 0
+      strength: 0
+      finesse: 0
+      instinct: 0
+      presence: 0
+      knowledge: 0
+    backgroundQuestions: []
+    connectionQuestions: []
+  - id: tyrion-lannister
+    name: Tyrion Lannister
+    class: Bard
+    level: 1
+    ancestry: Giant
+    community: ''
+    subclass: Wardsmith
+    tier: 1
+    image: ''
+    description: ''
+    backstory: ''
+    stats:
+      agility: 0
+      strength: 0
+      finesse: 0
+      instinct: 0
+      presence: 0
+      knowledge: 0
+    backgroundQuestions: []
+    connectionQuestions: []
+  - id: drax-borson
+    name: Drax Borson
+    class: Seraph
+    level: 1
+    ancestry: Farbog
+    community: ''
+    subclass: Divine Wulder
+    tier: 1
+    image: ''
+    description: ''
+    backstory: ''
+    stats:
+      agility: 0
+      strength: 0
+      finesse: 0
+      instinct: 0
+      presence: 0
+      knowledge: 0
+    backgroundQuestions: []
+    connectionQuestions: []
+npcs:
+  - id: kai-mellathorn
+    name: Kai Mellathorn
+    role: Galapa Citizen
+    location: solitaire
+    description: >-
+      A Galapa located in Solitaire. The party met him at the beginning of the
+      campaign. He had a notably negative interaction with Orna Kaan, where he
+      talked down to her quite a bit.
+  - id: king-emeris
+    name: King Emeris
+    role: King of Hearth
+    location: solitaire
+    description: >-
+      The King of the Kingdom of Hearth and the main quest giver to the party.
+      He employs Orna Kaan as his right-hand sorcerer. He tasked the party with
+      delivering a mysterious box to the village of Hush.
