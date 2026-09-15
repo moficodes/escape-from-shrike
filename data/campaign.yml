@@ -139,8 +139,8 @@ timeline:
       locationId: both-of-the-iron-coffins
       description: >-
         Four hundred and eighty years after Loki (20 years ago), Fire Patch, a
-        Fire Bolt ranger, receives the redemption offer from the Man in the
-        Green Cloak at the moment of his death and awakens in Shrike.
+        Firebug ranger, receives the redemption offer from the Man in the Green
+        Cloak at the moment of his death and awakens in Shrike.
       time:
         era: Shrike Era
         year: 495
@@ -176,7 +176,7 @@ timeline:
       type: general
       locationId: both-of-the-iron-coffins
       description: >-
-        Two years ago, Flora, an Eteris assassin, is granted a chance at
+        Two years ago, Flora, an Aetheris assassin, is granted a chance at
         redemption by the Man in the Green Cloak and sent to Shrike.
       time:
         era: Shrike Era
@@ -235,12 +235,12 @@ players:
     name: Flora
     class: Assassin
     level: 1
-    ancestry: Eteris
-    community: ''
-    subclass: ''
+    ancestry: Aetheris
+    community: Freeborne
+    subclass: Poisoners Guild
     tier: 1
     image: ''
-    description: An Eteris assassin burdened with lethal expertise from the mortal realm.
+    description: An Aetheris assassin burdened with lethal expertise from the mortal realm.
     backstory: >-
       Two years ago (Year 513), facing mortal death and the damnation of Hell,
       Flora accepted a pact with the Man in the Green Cloak: salvation and
@@ -259,9 +259,9 @@ players:
     name: Fire Patch
     class: Ranger
     level: 1
-    ancestry: Fire Bolt
-    community: ''
-    subclass: ''
+    ancestry: Firebug
+    community: Seaborn
+    subclass: Wayfinder
     tier: 1
     image: ''
     description: A fiery ranger who has navigated the hazards of Shrike for two decades.
@@ -284,8 +284,8 @@ players:
     class: Wizard
     level: 1
     ancestry: Elf
-    community: ''
-    subclass: ''
+    community: Highborn
+    subclass: School of War
     tier: 1
     image: ''
     description: >-
@@ -311,7 +311,7 @@ players:
     level: 1
     ancestry: Faun
     community: ''
-    subclass: ''
+    subclass: Nightwalker
     tier: 1
     image: ''
     description: A nimble faun rogue carrying secrets, favors, and hidden debts.
@@ -334,8 +334,8 @@ players:
     class: Sorcerer
     level: 1
     ancestry: Tiefling
-    community: ''
-    subclass: ''
+    community: Richborn
+    subclass: Primal Origin
     tier: 1
     image: ''
     description: >-
