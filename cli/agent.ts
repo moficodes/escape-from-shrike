@@ -43,6 +43,29 @@ home
     }
   });
 
+const settings = program.command("settings").description("Manage campaign settings");
+
+settings
+  .command("update")
+  .description("Update campaign settings")
+  .option("--themePreset <string>", "Theme preset (e.g. gothic-horror, fantasy-parchment)")
+  .option("--gameSystem <string>", "Game system (e.g. daggerheart, dnd5e)")
+  .action(async (options) => {
+    try {
+      const data = await readCampaign(CAMPAIGN_FILE);
+      if (!data.settings) {
+        data.settings = { gameSystem: "daggerheart", themePreset: "fantasy-parchment" };
+      }
+      if (options.themePreset) data.settings.themePreset = options.themePreset;
+      if (options.gameSystem) data.settings.gameSystem = options.gameSystem;
+      await writeCampaign(data, CAMPAIGN_FILE);
+      console.log("Settings updated successfully.");
+    } catch (err) {
+      console.error("Error updating settings:", err);
+      process.exit(1);
+    }
+  });
+
 const npc = program.command("npc").description("Manage NPCs");
 
 npc.command("list").action(async () => {
@@ -315,7 +338,7 @@ player.command("add")
         community: options.community || "",
         subclass: options.subclass || "",
         tier: options.tier || 1,
-        image: "/images/placeholders/player.webp",
+        image: "",
         description: "",
         backstory: "",
         stats: {
@@ -349,6 +372,7 @@ player.command("update")
   .option("--subclass <string>")
   .option("--tier <number>", "Player Tier", parseInt)
   .option("--image <string>")
+  .option("--clearImage")
   .option("--description <string>")
   .option("--backstory <string>")
   .action(async (id, options) => {
@@ -358,6 +382,10 @@ player.command("update")
       if (index === -1) {
         console.error(`Player with id ${id} not found.`);
         process.exit(1);
+      }
+      if (options.clearImage) {
+        options.image = "";
+        delete options.clearImage;
       }
       data.players[index] = { ...data.players[index], ...options };
       await writeCampaign(data, CAMPAIGN_FILE);

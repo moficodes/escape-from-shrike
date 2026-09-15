@@ -48,14 +48,14 @@ export default async function PlayerDetailPage({ params }: PageProps) {
         <div className="absolute inset-0 bg-surface-container-lowest m-2 sm:m-4 rounded-[1.5rem] -z-10"></div>
         
         <div className="flex flex-col sm:flex-row gap-8 items-start mb-8">
-           <div className="w-32 h-32 sm:w-48 sm:h-48 shrink-0 rounded-[2rem] overflow-hidden bg-surface-container-highest shadow-sm">
+           <div className="w-32 h-32 sm:w-48 sm:h-48 shrink-0 rounded-full overflow-hidden bg-surface-container-high shadow-elevation-3 flex items-center justify-center">
              {/* eslint-disable-next-line @next/next/no-img-element */}
              {player.image ? (
                <img src={player.image} alt={player.name} className="w-full h-full object-cover" />
              ) : (
-               <div className="w-full h-full flex items-center justify-center text-4xl font-bold text-on-surface-variant">
+               <span className="text-5xl sm:text-6xl font-bold text-primary">
                  {player.name.charAt(0)}
-               </div>
+               </span>
              )}
            </div>
 

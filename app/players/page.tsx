@@ -24,14 +24,14 @@ export default function PlayersPage() {
               <div className="absolute inset-0 bg-surface-container-lowest m-2 rounded-[1.5rem] -z-10 transition-transform duration-500 group-hover:scale-[0.98]"></div>
               
               <div className="flex items-center gap-4 mb-6">
-                <div className="h-16 w-16 rounded-full overflow-hidden shrink-0 bg-surface-container-highest">
+                <div className="h-16 w-16 rounded-full overflow-hidden shrink-0 bg-surface-container-high flex items-center justify-center shadow-elevation-1">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   {player.image ? (
                     <img src={player.image} alt={player.name} className="h-full w-full object-cover" />
                   ) : (
-                    <div className="h-full w-full flex items-center justify-center text-xl font-bold text-on-surface-variant">
+                    <span className="text-2xl font-bold text-primary">
                       {player.name.charAt(0)}
-                    </div>
+                    </span>
                   )}
                 </div>
                 <div>

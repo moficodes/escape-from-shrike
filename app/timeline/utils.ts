@@ -2,7 +2,20 @@ import { TimelineEvent, GameTime } from '@/types';
 
 export function formatGameTime(time?: GameTime): string {
   if (!time) return 'Unknown Time';
-  let result = `${time.month ?? ''} ${time.day ?? ''}, ${time.year ?? ''}`.trim();
+  let datePart = '';
+  if (time.month && time.day !== undefined) {
+    if (time.month.toLowerCase().startsWith('month')) {
+      datePart = `${time.month}, Day ${time.day}`;
+    } else {
+      datePart = `${time.month} ${time.day}`;
+    }
+  } else if (time.month) {
+    datePart = `${time.month}`;
+  } else if (time.day !== undefined) {
+    datePart = `Day ${time.day}`;
+  }
+
+  let result = datePart ? `${datePart}, ${time.year ?? ''}`.trim() : `${time.year ?? ''}`.trim();
   if (time.era && time.era !== 'The Second Age') {
     result += ` - ${time.era}`;
   }

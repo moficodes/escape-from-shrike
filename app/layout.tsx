@@ -131,7 +131,7 @@ export default function RootLayout({
             style={{ backgroundImage: `url(${backgrounds.global})` }}
           />
         )}
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Navbar brand={navBrand} />
           <main className="flex-grow">
             {children}

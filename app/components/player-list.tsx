@@ -14,7 +14,7 @@ const PlayerCard = ({ player }: { player: Player }) => (
       /* eslint-disable-next-line @next/next/no-img-element */
       <img src={player.image} alt={player.name} className="w-24 h-24 rounded-full object-cover shadow-sm group-hover:ring-4 ring-primary-container transition-all" />
     ) : (
-      <div className="w-24 h-24 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center text-4xl font-bold shadow-sm group-hover:ring-4 ring-primary-container transition-all">
+      <div className="w-24 h-24 rounded-full bg-surface-container-high text-primary flex items-center justify-center text-4xl font-bold shadow-sm group-hover:ring-4 ring-primary-container transition-all">
         {player.name.charAt(0)}
       </div>
     )}

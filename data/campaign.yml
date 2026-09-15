@@ -1,3 +1,6 @@
+settings:
+  gameSystem: daggerheart
+  themePreset: gothic-horror
 home:
   header:
     title: Escape from Shrike
@@ -128,8 +131,8 @@ timeline:
       time:
         era: Shrike Era
         year: 15
-        month: Month 1
-        day: 1
+        month: Month 7
+        day: 19
     - id: evt-arrival-fire-patch
       title: Arrival of Fire Patch
       type: general
@@ -141,8 +144,8 @@ timeline:
       time:
         era: Shrike Era
         year: 495
-        month: Month 1
-        day: 1
+        month: Month 3
+        day: 24
     - id: evt-arrival-maleficent
       title: Arrival of Maleficent
       type: general
@@ -154,8 +157,8 @@ timeline:
       time:
         era: Shrike Era
         year: 510
-        month: Month 1
-        day: 1
+        month: Month 10
+        day: 8
     - id: evt-arrival-moriarty
       title: Arrival of Moriarty
       type: general
@@ -166,8 +169,8 @@ timeline:
       time:
         era: Shrike Era
         year: 512
-        month: Month 1
-        day: 1
+        month: Month 6
+        day: 15
     - id: evt-arrival-flora
       title: Arrival of Flora
       type: general
@@ -178,8 +181,8 @@ timeline:
       time:
         era: Shrike Era
         year: 513
-        month: Month 1
-        day: 1
+        month: Month 12
+        day: 3
     - id: evt-battle-four-handed-monstrosity
       title: Battle with the Four-Handed Monstrosity
       type: combat
@@ -236,7 +239,7 @@ players:
     community: ''
     subclass: ''
     tier: 1
-    image: /images/placeholders/player.webp
+    image: ''
     description: An Eteris assassin burdened with lethal expertise from the mortal realm.
     backstory: >-
       Two years ago (Year 513), facing mortal death and the damnation of Hell,
@@ -260,7 +263,7 @@ players:
     community: ''
     subclass: ''
     tier: 1
-    image: /images/placeholders/player.webp
+    image: ''
     description: A fiery ranger who has navigated the hazards of Shrike for two decades.
     backstory: >-
       Twenty years ago (Year 495), at the brink of death, Fire Patch received an
@@ -284,7 +287,7 @@ players:
     community: ''
     subclass: ''
     tier: 1
-    image: /images/placeholders/player.webp
+    image: ''
     description: >-
       An ancient elven wizard who has endured within the Shrike for five
       centuries.
@@ -310,7 +313,7 @@ players:
     community: ''
     subclass: ''
     tier: 1
-    image: /images/placeholders/player.webp
+    image: ''
     description: A nimble faun rogue carrying secrets, favors, and hidden debts.
     backstory: >-
       Five years ago (Year 510, fifteen years after Fire Patch), Maleficent
@@ -334,7 +337,7 @@ players:
     community: ''
     subclass: ''
     tier: 1
-    image: /images/placeholders/player.webp
+    image: ''
     description: >-
       A cunning tiefling sorcerer wielding arcane power under the shadow of the
       Spire.
