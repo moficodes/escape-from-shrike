@@ -1,186 +1,322 @@
 home:
   header:
-    title: Sablewood Chronicles
+    title: Escape from Shrike
     description: >-
-      Welcome to the living record of our adventures, heroes, and the world we
-      shape together.
-    navBrand: Sablewood
+      Five condemned souls granted a second chance upon the Spire of Shrike.
+      Bound by blood and restored memory, their immediate task is to bring
+      Ezekiel Frond to Bonnie Morgas.
+    navBrand: Escape from Shrike
   nextSession: June 26, 2026 at 7 p.m.
+  activeQuest:
+    title: Bring Ezekiel Frond to Bonnie Morgas
+    status: active
+    locationId: leviathan-husk
+    description: >-
+      Bonnie Morgas asked the party for a favor: bring Ezekiel Frond from the
+      leviathan husk to her cottage, claiming she wishes to take him on as a
+      student.
   questList:
-    - title: Deliver the Box to Hush
+    - title: Bring Ezekiel Frond to Bonnie Morgas
       status: active
-      locationId: hush
+      locationId: leviathan-husk
       description: >-
-        King Emeris tasked Orna Kaan and her companions to deliver a mysterious
-        box from Solitaire to Hush. The party has safely arrived in Hush amidst
-        a festival and is staying at an inn overnight.
-    - title: Rescue the Missing Children of Hush
+        Bonnie Morgas asked the party for a favor: bring Ezekiel Frond from the
+        leviathan husk to her cottage, claiming she wishes to take him on as a
+        student.
+    - title: Deliver Nicodemus's Stone to Bonnie Morgas
       status: completed
-      locationId: hush
+      locationId: bonnie-morgas-cottage
       description: >-
-        Assisted Tyrion Lannister in finding and rescuing children from Hush who
-        wandered too far from the village and were hunted by monstrosities.
+        Delivered the peculiar stone from Nicodemus to Bonnie Morgas at her
+        cottage to settle an old favor.
+    - title: Seek the Favor of Sir Alabaster Cain
+      status: pending
+      locationId: house-of-salt
+      description: >-
+        Visit Sir Alabaster Cain at the House of Salt to collect the reward and
+        favor promised for helping him defeat the four-handed monstrosity.
+    - title: Free the Pierced Nameless God
+      status: pending
+      locationId: shrike
+      description: >-
+        The overarching pact made with the Man in the Green Cloak: ascend the
+        spire of Shrike and unbind the immortal, bleeding Nameless God whose
+        divine blood sustains the realm.
+  lastLocationId: bonnie-morgas-cottage
+  nextDestinationId: leviathan-husk
 locations:
-  - id: solitaire
-    name: Solitaire
-    region: Kingdom of Hearth
+  - id: shrike
+    name: The Shrike
+    region: Central Spire
     description: >-
-      The capital city of the Kingdom of Hearth and the seat of King Emeris. It
-      serves as the main trade hub of the kingdom. The city has stood for
-      thousands of years and is magically protected through wards and runes,
-      with a total population of eight thousand.
-  - id: hush
-    name: Hush
-    region: Unknown
+      A colossal jagged spire severed from the rest of Hell approximately 515
+      years ago. High atop the spire, an immortal Nameless God remains pierced
+      through; sustained by divine energy he cannot die, and his cascading blood
+      nourishes the dark vitality and arcane power of the entire realm.
+  - id: hollowtown
+    name: Hollowtown
+    region: Lower Shores
     description: >-
-      A village currently celebrating a lively late-night festival. The party
-      arrived here after rescuing missing children on the road with Tyrion
-      Lannister and is staying at a local inn.
-  - id: sablewood-forest
-    name: The Sablewood Forest
+      A fragile shoreline settlement of roughly 100 inhabitants clinging to
+      existence at the base of the Shrike near the sea, where scavengers and
+      newcomers eke out a living.
+  - id: both-of-the-iron-coffins
+    name: Both of the Iron Coffins
+    region: Lower Shores
     description: >-
-      The Sablewood is an ancient, expansive forest of trees that reach hundreds
-      of feet into the air. Rumored to be older than the Forgotten Gods, this
-      dense wood is widely known throughout the Mortal Realm, and many who visit
-      are surprised to learn that the stories they believed were exaggerated
-      legends are, in fact, stark truths.
+      A grim expanse of shore where iron coffins wash up from the black waters
+      or protrude from the ground. Many newcomers to the Shrike who arrived
+      through mortal death first awaken inside these iron sarcophagi.
+  - id: longpoint
+    name: Longpoint
+    region: Lateral Spine
+    description: >-
+      A small settlement clustered around a lateral spine of the Shrike—a sharp
+      rock protrusion extending outward from the spire. Rumor says that anyone
+      who walks the entire length of the spine will find an exit from the
+      Shrike, though no one has ever returned to confirm it.
+  - id: leviathan-husk
+    name: Calcified Leviathan Husk
+    region: Western Coast
+    description: >-
+      The massive petrified carcass of a leviathan resting along the western
+      coast of the island. Over the last few months, a wandering wizard named
+      Ezekiel Frond has taken up residence within the shelter of its hollowed
+      ribs.
+  - id: house-of-salt
+    name: House of Salt
+    region: Ocean Level
+    description: >-
+      The domain and seat of Archon Iao. Uniquely situated among the five devil
+      Archons as the only house located at the lowest level near the ocean
+      shores. Sir Alabaster Cain serves as an honorable knight under this house.
+  - id: bonnie-morgas-cottage
+    name: Bonnie Morga's Cottage
+    region: Lower Shrike
+    description: >-
+      The secluded dwelling of Bonnie Morgas, where travelers trade secrets and
+      resources for her favors. It is here the party drank blood and awakened to
+      their true memories.
 timeline:
   title: Campaign Timeline
   subtitle: The story so far
   description: Events of our heroes
   events:
-    - id: evt-journey-begins
-      title: The Journey Begins
+    - id: evt-shrike-severed
+      title: The Severance of Shrike and the Pierced God
+      type: general
+      locationId: shrike
+      description: >-
+        Approximately 515 years ago, Shrike was severed from the rest of Hell.
+        At the peak of the spire, an immortal Nameless God was pierced through;
+        sustained by divine energy he cannot die, and his flowing blood
+        nourishes the dark life and arcane power of the spire.
       time:
-        era: Enlightenement
-        year: 3982
-        month: Tolmir
-        day: 4
-        hour: 12
-        minute: 45
-      type: location_change
-      description: The party takes the box with them and starts their journey towards Hush.
-      locationId: solitaire
-    - id: evt-ambush
-      title: Ambush on the Road
+        era: Shrike Era
+        year: 0
+        month: Month 1
+        day: 1
+    - id: evt-arrival-loki
+      title: Arrival of Loki Morgulis
+      type: general
+      locationId: both-of-the-iron-coffins
+      description: >-
+        Fifteen years after Shrike's creation (~500 years ago), Loki Morgulis,
+        an elven wizard facing damnation for mortal atrocities, accepts an offer
+        of redemption from the Man in the Green Cloak to enter Shrike and free
+        the Nameless God.
       time:
-        era: Enlightenement
-        year: 3982
-        month: Tolmir
-        day: 4
-        hour: 19
+        era: Shrike Era
+        year: 15
+        month: Month 1
+        day: 1
+    - id: evt-arrival-fire-patch
+      title: Arrival of Fire Patch
+      type: general
+      locationId: both-of-the-iron-coffins
+      description: >-
+        Four hundred and eighty years after Loki (20 years ago), Fire Patch, a
+        Fire Bolt ranger, receives the redemption offer from the Man in the
+        Green Cloak at the moment of his death and awakens in Shrike.
+      time:
+        era: Shrike Era
+        year: 495
+        month: Month 1
+        day: 1
+    - id: evt-arrival-maleficent
+      title: Arrival of Maleficent
+      type: general
+      locationId: both-of-the-iron-coffins
+      description: >-
+        Fifteen years after Fire Patch (5 years ago), Maleficent, a faun rogue,
+        accepts the Man in the Green Cloak's offer upon death and is sent to
+        Shrike.
+      time:
+        era: Shrike Era
+        year: 510
+        month: Month 1
+        day: 1
+    - id: evt-arrival-moriarty
+      title: Arrival of Moriarty
+      type: general
+      locationId: both-of-the-iron-coffins
+      description: >-
+        Three years ago, Moriarty, a tiefling sorcerer, receives the offer of
+        salvation from the Man in the Green Cloak and is sent to Shrike.
+      time:
+        era: Shrike Era
+        year: 512
+        month: Month 1
+        day: 1
+    - id: evt-arrival-flora
+      title: Arrival of Flora
+      type: general
+      locationId: both-of-the-iron-coffins
+      description: >-
+        Two years ago, Flora, an Eteris assassin, is granted a chance at
+        redemption by the Man in the Green Cloak and sent to Shrike.
+      time:
+        era: Shrike Era
+        year: 513
+        month: Month 1
+        day: 1
+    - id: evt-battle-four-handed-monstrosity
+      title: Battle with the Four-Handed Monstrosity
+      type: combat
+      locationId: shrike
+      description: >-
+        The party intervenes in a vicious skirmish to assist Sir Alabaster Cain
+        of the House of Salt against a four-handed monstrosity. In gratitude,
+        Cain promises them a favor should they seek him out at the House of
+        Salt.
+      time:
+        era: Shrike Era
+        year: 515
+        month: Month 4
+        day: 11
+        hour: 9
         minute: 0
-      type: combat
+    - id: evt-nicodemus-stone
+      title: The Errand for Nicodemus
+      type: general
+      locationId: hollowtown
       description: >-
-        The party finds a cart in the road that was blocked. They encounter a
-        group of strix wolf. Once they peacefully deal with the Strix Wolf, they
-        were ambushed by a group of thistle folk. The party barely manages to
-        fight them off.
-    - id: evt-rescue-hush-children
-      title: Rescue of the Hush Children
-      type: combat
-      description: >-
-        During late-night travel towards Hush while Orna rested in the carriage,
-        the party reconnected with their old friend Tyrion Lannister, a giant
-        bard searching for missing village children who strayed too far from
-        safety. Working with Tyrion, the party tracked the children down, fought
-        off attacking monstrosities, and rescued them.
-      locationId: hush
+        Nicodemus entrusts a peculiar stone to Maleficent to be carried to
+        Bonnie Morgas, repaying an outstanding favor.
       time:
-        era: Enlightenment
-        year: 3982
-        month: Tolmir
-        day: 4
-        hour: 22
+        era: Shrike Era
+        year: 515
+        month: Month 4
+        day: 11
+        hour: 13
         minute: 30
-    - id: evt-arrival-in-hush
-      title: Arrival at Hush
-      type: location_change
+    - id: evt-memories-restored-bonnie
+      title: Awakening at Bonnie Morga's Cottage
+      type: npc_meet
+      locationId: bonnie-morgas-cottage
       description: >-
-        The party returned to the village of Hush in the dead of night. They
-        found Hush actively celebrating a festival with many villagers still
-        awake. The group quickly secured lodging at a local inn to rest for the
-        night.
-      locationId: hush
+        The party reaches Bonnie Morga's cottage seeking knowledge. In a pro
+        bono gesture, Bonnie has the party drink blood. The draught restores
+        their lost memories of their mortality and deaths, revealing they were
+        each tasked by the Man in the Green Cloak to free the pierced Nameless
+        God.
       time:
-        era: Enlightenment
-        year: 3982
-        month: Tolmir
-        day: 4
-        hour: 23
-        minute: 45
+        era: Shrike Era
+        year: 515
+        month: Month 4
+        day: 11
+        hour: 18
+        minute: 0
 players:
-  - id: orna-kaan
-    name: Orna Kaan
-    class: Sorcerer
+  - id: flora
+    name: Flora
+    class: Assassin
     level: 1
-    ancestry: Galapa
-    community: Loreborn
-    subclass: Primal Origin
+    ancestry: Eteris
+    community: ''
+    subclass: ''
     tier: 1
-    image: ''
-    description: ''
-    backstory: ''
+    image: /images/placeholders/player.webp
+    description: An Eteris assassin burdened with lethal expertise from the mortal realm.
+    backstory: >-
+      Two years ago (Year 513), facing mortal death and the damnation of Hell,
+      Flora accepted a pact with the Man in the Green Cloak: salvation and
+      redemption in exchange for entering Shrike to liberate the pierced
+      Nameless God.
     stats:
       agility: 0
-      strength: -1
-      finesse: 1
-      instinct: 2
-      presence: 1
-      knowledge: 0
-    backgroundQuestions: []
-    connectionQuestions: []
-  - id: fantasia
-    name: Fantasia
-    class: Druid
-    level: 1
-    ancestry: Faun
-    community: Wanderborne
-    subclass: Warden of Elements
-    tier: 1
-    image: ''
-    description: ''
-    backstory: ''
-    stats:
-      agility: 1
       strength: 0
-      finesse: 1
-      instinct: 2
-      presence: -1
+      finesse: 0
+      instinct: 0
+      presence: 0
       knowledge: 0
     backgroundQuestions: []
     connectionQuestions: []
-  - id: dracarys
-    name: Dracarys
+  - id: fire-patch
+    name: Fire Patch
+    class: Ranger
+    level: 1
+    ancestry: Fire Bolt
+    community: ''
+    subclass: ''
+    tier: 1
+    image: /images/placeholders/player.webp
+    description: A fiery ranger who has navigated the hazards of Shrike for two decades.
+    backstory: >-
+      Twenty years ago (Year 495), at the brink of death, Fire Patch received an
+      offer from the Man in the Green Cloak. To atone for past deeds that would
+      have landed him in Hell, he agreed to journey to Shrike and free the
+      bleeding Nameless God.
+    stats:
+      agility: 0
+      strength: 0
+      finesse: 0
+      instinct: 0
+      presence: 0
+      knowledge: 0
+    backgroundQuestions: []
+    connectionQuestions: []
+  - id: loki-morgulis
+    name: Loki Morgulis
+    class: Wizard
+    level: 1
+    ancestry: Elf
+    community: ''
+    subclass: ''
+    tier: 1
+    image: /images/placeholders/player.webp
+    description: >-
+      An ancient elven wizard who has endured within the Shrike for five
+      centuries.
+    backstory: >-
+      Five hundred years ago (Year 15), Loki Morgulis was offered redemption by
+      the Man in the Green Cloak at the threshold of death. Rather than burning
+      in Hell for worldly atrocities, he entered Shrike with a singular purpose:
+      to free the pierced Nameless God.
+    stats:
+      agility: 0
+      strength: 0
+      finesse: 0
+      instinct: 0
+      presence: 0
+      knowledge: 0
+    backgroundQuestions: []
+    connectionQuestions: []
+  - id: maleficent
+    name: Maleficent
     class: Rogue
     level: 1
-    ancestry: Drakona
-    community: Underborne
-    subclass: Nightwalker
-    tier: 1
-    image: ''
-    description: ''
-    backstory: ''
-    stats:
-      agility: 1
-      strength: -1
-      finesse: 2
-      instinct: 0
-      presence: 1
-      knowledge: 0
-    backgroundQuestions: []
-    connectionQuestions: []
-  - id: vala-thorne
-    name: Vala Thorne
-    class: Guardian
-    level: 1
-    ancestry: Human
+    ancestry: Faun
     community: ''
-    subclass: Vengeance
+    subclass: ''
     tier: 1
-    image: ''
-    description: ''
-    backstory: ''
+    image: /images/placeholders/player.webp
+    description: A nimble faun rogue carrying secrets, favors, and hidden debts.
+    backstory: >-
+      Five years ago (Year 510, fifteen years after Fire Patch), Maleficent
+      struck the same pact with the Man in the Green Cloak. Before journeying to
+      Bonnie Morgas, she was entrusted with a mysterious stone by Nicodemus to
+      settle a favor on his behalf.
     stats:
       agility: 0
       strength: 0
@@ -190,37 +326,22 @@ players:
       knowledge: 0
     backgroundQuestions: []
     connectionQuestions: []
-  - id: tyrion-lannister
-    name: Tyrion Lannister
-    class: Bard
+  - id: moriarty
+    name: Moriarty
+    class: Sorcerer
     level: 1
-    ancestry: Giant
+    ancestry: Tiefling
     community: ''
-    subclass: Wardsmith
+    subclass: ''
     tier: 1
-    image: ''
-    description: ''
-    backstory: ''
-    stats:
-      agility: 0
-      strength: 0
-      finesse: 0
-      instinct: 0
-      presence: 0
-      knowledge: 0
-    backgroundQuestions: []
-    connectionQuestions: []
-  - id: drax-borson
-    name: Drax Borson
-    class: Seraph
-    level: 1
-    ancestry: Farbog
-    community: ''
-    subclass: Divine Wulder
-    tier: 1
-    image: ''
-    description: ''
-    backstory: ''
+    image: /images/placeholders/player.webp
+    description: >-
+      A cunning tiefling sorcerer wielding arcane power under the shadow of the
+      Spire.
+    backstory: >-
+      Three years ago (Year 512), Moriarty stood at death's door and accepted
+      the Man in the Green Cloak's offer of salvation, arriving in Shrike bound
+      to the mission of unbinding the Nameless God.
     stats:
       agility: 0
       strength: 0
@@ -231,19 +352,56 @@ players:
     backgroundQuestions: []
     connectionQuestions: []
 npcs:
-  - id: kai-mellathorn
-    name: Kai Mellathorn
-    role: Galapa Citizen
-    location: solitaire
+  - id: bonnie-morgas
+    name: Bonnie Morgas
+    role: Dealer of Favors & Secrets
+    location: bonnie-morgas-cottage
     description: >-
-      A Galapa located in Solitaire. The party met him at the beginning of the
-      campaign. He had a notably negative interaction with Orna Kaan, where he
-      talked down to her quite a bit.
-  - id: king-emeris
-    name: King Emeris
-    role: King of Hearth
-    location: solitaire
+      Appearing to be a human woman in her mid-forties, Bonnie resides in her
+      cottage and dispenses favors in exchange for rare resources and
+      intelligence. In a pro bono gesture, she provided the party with blood to
+      drink, restoring their forgotten memories of their mortal deaths and their
+      task from the Man in the Green Cloak. She has now tasked the party with
+      bringing Ezekiel Frond to her cottage, claiming she wishes to take him as
+      a student.
+  - id: sir-alabaster-cain
+    name: Sir Alabaster Cain
+    role: Knight of the House of Salt
+    location: house-of-salt
     description: >-
-      The King of the Kingdom of Hearth and the main quest giver to the party.
-      He employs Orna Kaan as his right-hand sorcerer. He tasked the party with
-      delivering a mysterious box to the village of Hush.
+      A stalwart knight aligned with the House of Salt. After the party fought
+      alongside him to defeat a four-handed monstrosity, he promised them a
+      rewarding favor should they seek him out at the House of Salt.
+  - id: nicodemus
+    name: Nicodemus
+    role: Debtor & Shore dweller
+    location: hollowtown
+    description: >-
+      An acquaintance on the lower shores who owed a favor to Bonnie Morgas and
+      entrusted a mysterious stone to Maleficent to deliver to Bonnie to clear
+      his debt.
+  - id: ezekiel-frond
+    name: Ezekiel Frond
+    role: Wandering Wizard
+    location: leviathan-husk
+    description: >-
+      A traveler and wizard who has made his dwelling inside the calcified
+      leviathan carcass on the western coast for the past few months. The party
+      has not yet met him.
+  - id: archon-iao
+    name: Archon Iao
+    role: Devil Archon of the House of Salt
+    location: house-of-salt
+    description: >-
+      One of the five devil Archons governing territories across the Shrike, and
+      the only Archon whose seat resides at the lowest level bordering the
+      ocean.
+  - id: man-in-the-green-cloak
+    name: The Man in the Green Cloak
+    role: Harbinger of Redemption
+    location: shrike
+    description: >-
+      A mysterious cloaked entity who visited each party member at the moment of
+      their mortal death across different centuries, offering salvation from
+      Hell in exchange for journeying to Shrike to liberate the pierced Nameless
+      God.

@@ -416,6 +416,9 @@ quest.command("add")
         process.exit(1);
       }
       data.home.questList.push({ ...options });
+      if (options.status === "active") {
+        data.home.activeQuest = { ...options };
+      }
       await writeCampaign(data, CAMPAIGN_FILE);
       console.log(`Added Quest: ${options.title}`);
     } catch (err) {
@@ -439,13 +442,25 @@ quest.command("update")
       
       if (index === -1) {
         if (data.home.activeQuest && data.home.activeQuest.title === title) {
-          data.home.activeQuest = { ...data.home.activeQuest, ...options };
+          data.home.activeQuest = {
+            title: options.title || data.home.activeQuest.title,
+            status: options.status || data.home.activeQuest.status,
+            locationId: options.locationId || data.home.activeQuest.locationId,
+            description: options.description !== undefined ? options.description : data.home.activeQuest.description,
+          };
         } else {
           console.error(`Quest with title ${title} not found in questList or activeQuest.`);
           process.exit(1);
         }
       } else {
         data.home.questList[index] = { ...data.home.questList[index], ...options };
+      }
+      if (options.status === "active") {
+        if (index !== -1) {
+          data.home.activeQuest = { ...data.home.questList[index] };
+        }
+      } else if (options.status && options.status !== "active" && data.home.activeQuest && data.home.activeQuest.title === title) {
+        data.home.activeQuest = undefined;
       }
       await writeCampaign(data, CAMPAIGN_FILE);
       console.log(`Updated Quest: ${title}`);
